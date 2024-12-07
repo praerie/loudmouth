@@ -63,7 +63,6 @@ function applyTheme(theme) {
     const subtitle = document.querySelector('h2');
     if (subtitle) {
         subtitle.style.color = theme.subtitleColor;
-        subtitle.style.textShadow = `0.02rem 0.02rem 0.2rem ${theme.shadowColor}`;
     }
 
     const stats = document.querySelectorAll('.stats p');
@@ -73,7 +72,6 @@ function applyTheme(theme) {
 
     const textarea = document.querySelector('textarea');
     if (textarea) {
-        textarea.style.color = theme.textColor;
         textarea.style.border = `0.5rem solid ${theme.borderColor}`;
         textarea.style.boxShadow = `0 0.2rem 0.2rem 0.2rem ${theme.shadowColor}`;
     }
