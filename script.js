@@ -51,32 +51,30 @@ function applyTheme(theme) {
 
     const statsContainer = document.querySelector('.stats-container');
     if (statsContainer) {
-        statsContainer.style.backgroundColor = theme.statsContainerColor || theme.containerColor;
+        statsContainer.style.backgroundColor = theme.containerColor;
     }
 
     const title = document.querySelector('h1');
     if (title) {
         title.style.color = theme.titleColor;
-        title.style.textShadow = `0.2rem 0.2rem 0.2rem ${theme.titleShadowColor}`;
+        title.style.textShadow = `0.2rem 0.2rem 0.2rem ${theme.shadowColor}`;
     }
 
     const subtitle = document.querySelector('h2');
     if (subtitle) {
         subtitle.style.color = theme.subtitleColor;
-        subtitle.style.textShadow = `0.02rem 0.02rem 0.2rem ${theme.subtitleShadowColor}`;
+        subtitle.style.textShadow = `0.02rem 0.02rem 0.2rem ${theme.shadowColor}`;
     }
 
     const stats = document.querySelectorAll('.stats p');
     stats.forEach(stat => {
-        stat.style.color = theme.statsColor;
-        stat.style.textShadow = `0.01rem 0.01rem 0.2rem ${theme.statsShadowColor}`;
+        stat.style.color = theme.statsTextColor;
     });
 
     const textarea = document.querySelector('textarea');
     if (textarea) {
-        textarea.style.backgroundColor = theme.textareaBackgroundColor;
-        textarea.style.color = theme.textareaTextColor;
-        textarea.style.borderColor = theme.textareaBorderColor;
-        textarea.style.boxShadow = `0 0.2rem 0.2rem 0.2rem ${theme.textareaShadowColor}`;
+        textarea.style.color = theme.textColor;
+        textarea.style.border = `0.5rem solid ${theme.borderColor}`;
+        textarea.style.boxShadow = `0 0.2rem 0.2rem 0.2rem ${theme.shadowColor}`;
     }
 }
