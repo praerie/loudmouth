@@ -1,2 +1,2 @@
 # loudmouth
-Word counter web app
+A rich text editor web app with eclectic themes and playful features. 
