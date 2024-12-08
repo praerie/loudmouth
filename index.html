@@ -9,15 +9,26 @@
     </head>
     <body>
         <div class="counter-container">
-            <div class="icons">
+            <div class="top-icons">
                 <button id="dark-mode-toggle"><img src="/assets/darkmode.svg" /></button>
                 <button id="theme-toggle"><img src="/assets/palette.svg" /></button>
             </div>
             <div class="title-container">
                 <h1>Loudmouth</h1>
-                <h2>a simple word and character counter</h2>
             </div>
             <div class="box-container">
+                <div class="box-icons">
+                    <div class="left-buttons">
+                        <button id="help"><img src="/assets/help.svg" /></button>
+                        <button id="undo"><img src="/assets/undo.svg" /></button>
+                        <button id="redo"><img src="/assets/redo.svg" /></button>
+                    </div>
+                    <div id="hover-text" class="hover-text" style="display: none;"></div>
+                    <div class="right-buttons">
+                        <button id="clear"><img src="/assets/clear.svg" /></button>
+                        <button id="save"><img src="/assets/save.svg" /></button>
+                    </div>
+                </div>                          
                 <textarea id="text-input" placeholder="blah blah blah..."></textarea>
                 <div class="stats-container">
                     <div class="stats">
@@ -29,6 +40,6 @@
         </div>
         
         <script src="script.js"></script>
-        <script src="const.js" defer></script>
+        <script src="themes.js" defer></script>
     </body>
 </html>

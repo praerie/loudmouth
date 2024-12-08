@@ -28,7 +28,7 @@ body {
 .box-container {
     width: 80vw;
     max-width: 800px;
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     background-color: #d6ffb7;
     box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(59, 5, 5, 0.5);
@@ -46,7 +46,7 @@ body {
     max-width: 600px;
     padding: 1rem;
     border-radius: 0.5rem;
-    margin-top: 1.4rem;
+    margin-top: 1rem;
 }
 
 .stats {
@@ -70,7 +70,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: -0.15rem;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(59, 5, 5, 0.5);
 }
 
@@ -95,15 +95,14 @@ textarea {
     box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(59, 5, 5, 0.5);
 }
 
-.icons {
+.top-icons {
     display: flex;
     align-self: flex-end;
-    justify-content: right;
     padding-top: 0.5rem;
     gap: 0.5rem;
 }
 
-.icons button {
+.top-icons button {
     cursor: pointer;
     padding: 0.3rem;
     border-radius: 0.5rem;
@@ -114,10 +113,54 @@ textarea {
     cursor: pointer;
 }
 
-.icons button:hover {
+.top-icons button:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+.box-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    padding: 0.5rem;
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.left-buttons button,
+.right-buttons button {
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(25, 25, 25, 0.25);
+    box-shadow: 0 0.1rem 0.1rem 0.1rem rgba(25, 25, 25, 0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.left-buttons button:hover,
+.right-buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hover-text {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #499167;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    margin-top: 0.5rem;
 }
 
 body, .box-container, .stats-container, textarea {

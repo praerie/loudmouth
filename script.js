@@ -70,9 +70,42 @@ function applyTheme(theme) {
         stat.style.color = theme.statsTextColor;
     });
 
+    const hoverText = document.querySelector('.hover-text'); 
+    if (hoverText) {
+        hoverText.style.color = theme.statsTextColor;
+    }
+
     const textarea = document.querySelector('textarea');
     if (textarea) {
         textarea.style.border = `0.5rem solid ${theme.borderColor}`;
         textarea.style.boxShadow = `0 0.2rem 0.2rem 0.2rem ${theme.shadowColor}`;
     }
 }
+
+const textMap = {
+    help: "a simple word and character counter — type or paste your text below",
+    undo: "undo",
+    redo: "redo",
+    clear: "get rid of it all",
+    save: "save as a .txt file on your device"
+};
+
+function setupHoverEffect(buttonId) {
+    const button = document.getElementById(buttonId);
+    const hoverText = document.getElementById("hover-text");
+
+    button.addEventListener("mouseover", () => {
+        hoverText.textContent = textMap[buttonId];
+        hoverText.style.display = "block";
+    });
+
+    button.addEventListener("mouseout", () => {
+        hoverText.style.display = "none";
+    });
+}
+
+setupHoverEffect("help");
+setupHoverEffect("undo");
+setupHoverEffect("redo");
+setupHoverEffect("clear");
+setupHoverEffect("save");
