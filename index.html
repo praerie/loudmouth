@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Loudmouth—Word Counter</title>
+        <title>LOUDMOUTH—Rich Text Editor</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -16,21 +16,40 @@
             <div class="title-container">
                 <h1>Loudmouth</h1>
             </div>
-            <div class="box-container">
-                <div class="box-icons">
+            <div class="textbox-container">
+                <div class="textbox-toolbar">
                     <div class="left-buttons">
-                        <button id="help"><img src="/assets/help.svg" /></button>
-                        <button id="undo"><img src="/assets/undo.svg" /></button>
-                        <button id="redo"><img src="/assets/redo.svg" /></button>
+                        <button id="undo"><img src="assets/undo.svg" alt="Undo" /></button>
+                        <button id="redo"><img src="assets/redo.svg" alt="Redo" /></button>
+                        <button id="bold"><img src="assets/bold.svg" alt="Bold" /></button>
+                        <button id="italic"><img src="assets/italic.svg" alt="Italic" /></button>
+                        <button id="underline"><img src="assets/underline.svg" alt="Underline" /></button>
+                        <button id="strikethrough"><img src="assets/strikethrough.svg" alt="Strikethrough" /></button>
+                        <button id="quote"><img src="assets/color.svg" alt="Color" /></button>
+                        <button id="highlight"><img src="assets/highlight.svg" alt="Highlight" /></button>
+                        <button id="align-left"><img src="assets/align_left.svg" alt="Align Left" /></button>
+                        <button id="align-center"><img src="assets/align_center.svg" alt="Align Center" /></button>
+                        <button id="align-right"><img src="assets/align_right.svg" alt="Align Right" /></button>
+                        <button id="align-justify"><img src="assets/align_justify.svg" alt="Align Justify" /></button>
+                        <button id="superscript"><img src="assets/superscript.svg" alt="Superscript" /></button>
+                        <button id="subscript"><img src="assets/subscript.svg" alt="Subscript" /></button>
+                        <button id="title-case"><img src="assets/titlecase.svg" alt="Title Case" /></button>
+                        <button id="uppercase"><img src="assets/uppercase.svg" alt="Uppercase" /></button>
+                        <button id="lowercase"><img src="assets/lowercase.svg" alt="Lowercase" /></button>
+                        <button id="list-numbered"><img src="assets/list_numbered.svg" alt="List Numbered" /></button>
+                        <button id="list-bulleted"><img src="assets/list_bulleted.svg" alt="List Bulleted" /></button>
+                        <button id="link"><img src="assets/link.svg" alt="Link" /></button>
+                        <button id="copy"><img src="assets/copy.svg" alt="Copy" /></button>
+                        <button id="cut"><img src="assets/cut.svg" alt="Cut" /></button>
+                        <button id="paste"><img src="assets/paste.svg" alt="Paste" /></button>
+                        <button id="search"><img src="assets/search.svg" alt="Search" /></button>
+                        <button id="clear"><img src="assets/clear.svg" alt="Clear" /></button>
+                        <button id="save"><img src="assets/save.svg" alt="Save" /></button>
                     </div>
-                    <div id="hover-text" class="hover-text" style="display: none;"></div>
-                    <div class="right-buttons">
-                        <button id="clear"><img src="/assets/clear.svg" /></button>
-                        <button id="save"><img src="/assets/save.svg" /></button>
-                    </div>
-                </div>                          
-                <textarea id="text-input" placeholder="blah blah blah..."></textarea>
+                </div>
+                <textarea id="text-input" placeholder="blah, blah, blah..."></textarea>
                 <div class="stats-container">
+                    <div id="hover-text" class="hover-text" style="display: none;"></div>
                     <div class="stats">
                         <p>words: <span id="word-count">0</span></p>
                         <p>characters: <span id="char-count">0</span></p>

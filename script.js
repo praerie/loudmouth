@@ -43,15 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function applyTheme(theme) {
     document.body.style.backgroundColor = theme.backgroundColor;
 
-    const boxContainer = document.querySelector('.box-container');
+    const boxContainer = document.querySelector('.textbox-container');
     if (boxContainer) {
         boxContainer.style.backgroundColor = theme.containerColor;
         boxContainer.style.boxShadow = `0 0.5rem 0.5rem 0.5rem ${theme.shadowColor}`;
-    }
-
-    const statsContainer = document.querySelector('.stats-container');
-    if (statsContainer) {
-        statsContainer.style.backgroundColor = theme.containerColor;
     }
 
     const title = document.querySelector('h1');
