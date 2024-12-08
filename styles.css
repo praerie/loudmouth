@@ -28,7 +28,7 @@ body {
     padding: 2rem;
     border-radius: 0.5rem;
     background-color: #d6ffb7;
-    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(59, 5, 5, 0.432);
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(59, 5, 5, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,7 @@ h1 {
     font-weight: 800;
     letter-spacing: -0.3rem;
     font-size: 3rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(59, 5, 5, 0.432);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(59, 5, 5, 0.5);
 }
 
 h2 {
@@ -85,22 +85,33 @@ textarea {
     border: 0.5rem solid #92c8a8;
     border-radius: 0.5rem;
     resize: none;
-    color: #111111;
+    color: #111;
     background-color: #fff;
-    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(59, 5, 5, 0.432);
+    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(59, 5, 5, 0.5);
 }
 
 .icons {
     display: flex;
     align-self: flex-end;
     justify-content: right;
-    padding-top: 0.5rem;
+    padding-top: 0.5rem;   
 }
 
 .icons button {
-    border: none;
-    background: none;
     cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(25, 25, 25, 0.25);
+    box-shadow: 0 0.1rem 0.1rem 0.1rem rgba(25, 25, 25, 0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.icons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 body, .box-container, .stats-container, textarea {
