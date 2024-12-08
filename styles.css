@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, Inter Tight, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4845f;
@@ -59,14 +62,15 @@ body {
 }
 
 h1 {
+    font-family: Afacad Flux;
     text-align: center;
     color: #20063b;
     margin-bottom: -1rem;
     margin-top: -0.5rem;
     text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: -0.3rem;
-    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -0.15rem;
+    font-size: 3.5rem;
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(59, 5, 5, 0.5);
 }
 
@@ -75,7 +79,7 @@ h2 {
     color: #5b2333;
     font-weight: 400;
     letter-spacing: -0.08rem;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 
 textarea {
